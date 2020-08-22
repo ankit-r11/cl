@@ -17,3 +17,6 @@ for index,value in enumerate(word):
      print(index)
      print(value)
      print("\n")
+
+
+
