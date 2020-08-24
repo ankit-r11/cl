@@ -4,3 +4,6 @@ print(st.split())
 for word in st.split():
     if word[0]=='s':
       print(word)
+
+
+
