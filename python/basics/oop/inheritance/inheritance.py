@@ -9,6 +9,8 @@ class Person():
         self.name_2="_2"
     def display(self):
         print("name is {} and age is {}".format(self.name,self.age))
+    def __base_priv(self):
+        print("Inside base private function")
     @property
     def name_priv(self):
         return self.__priv_name
@@ -37,10 +39,12 @@ class Student(Person):
 
 person=Person("abc",25)
 person.display()
+person._Person__base_priv()
 print("#########################")
 teacher=Teacher("def",24,5,"Math")
 teacher.display()
 teacher.displayData()
+teacher._Person__base_priv()
 print("#########################")
 student=Student("ghi",24,"Science",98)
 student.displayData()
